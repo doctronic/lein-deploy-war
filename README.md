@@ -1,4 +1,4 @@
-# deploy-artifact
+# lein-deploy-artifact
 
 A [Leiningen](leiningen.org) plugin to deploy artifacts to remote repository,
 inheriting project's name, group, and version.
