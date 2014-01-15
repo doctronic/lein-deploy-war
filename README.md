@@ -1,4 +1,4 @@
-# lein-deploy-artifact
+# lein-deploy-artifacts
 
 A [Leiningen](leiningen.org) plugin to deploy artifacts to remote repository,
 inheriting project's name, group, and version.
@@ -25,7 +25,7 @@ Put `[lein-deploy-artifacts "0.1.0"]` into the `:plugins` vector of your project
 
 Example usage:
 
-    $ lein deploy-artifact myrepo fancypants.jar
+    $ lein deploy-artifacts myrepo fancypants.jar
 
 ## License
 
