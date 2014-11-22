@@ -1,5 +1,5 @@
-(defproject org.clojars.gregwoodfill/lein-deploy-war "0.1.0"
-  :description "Deploy war files to remote repositories"
+(defproject org.clojars.gregwoodfill/lein-deploy-war "0.1.1-SNAPSHOT"
+  :description "Deploy war files to remote repositories. Should be used in conjunction with `ring war`"
   :url "https://github.com/gregwoodfill/lein-deploy-war"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
