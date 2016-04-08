@@ -13,9 +13,10 @@ This task functions by delegating to the built-in Leiningen deploy task."
   [project & args]
   (let [identifier (str (symbol (:group project) (:name project)))
         version (:version project)
-        war-file (str "target/" (:name project) "-" (:version project) ".war")
-        repository (if (pom/snapshot? project) 
-                     "snapshots" 
+        uberwar-name (get-in project [:ring :uberwar-name])
+        war-file (str "target/" uberwar-name)
+        repository (if (pom/snapshot? project)
+                     "snapshots"
                      "releases")]
     (main/debug "deploying" war-file "to" repository)
     (dep/deploy project repository identifier version war-file)))

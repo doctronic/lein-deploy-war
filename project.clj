@@ -1,4 +1,4 @@
-(defproject de.doctronic/lein-deploy-war "0.1.1-SNAPSHOT"
+(defproject de.doctronic/lein-deploy-war "0.2.1-SNAPSHOT"
   :description "Deploy war files to remote repositories. Should be used in conjunction with `ring war`"
   :url "https://github.com/gregwoodfill/lein-deploy-war"
   :license {:name "Eclipse Public License"
