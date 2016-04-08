@@ -1,11 +1,12 @@
-# lein-deploy-war 
+# lein-deploy-war
 
 A [Leiningen](leiningen.org) plugin to deploy war artifacts from [ring](https://github.com/weavejester/lein-ring) to remote repository,
 inheriting project's name, group, and version.
 
 This task lets you deploy arbitrary artifacts from disk without having to specify
-the artifacts' name, group, or version. These values are looked up in the current
-project. This plugin will also automatically upload to your snapshots and release.
+the artifacts' group, or version. These values are looked up in the current
+project. The name will simply be your uberwar-name (as configured inside the `:ring` map).
+This plugin will also automatically upload to your snapshots and release.
 
 This task functions by delegating to the built-in Leiningen deploy task.
 
